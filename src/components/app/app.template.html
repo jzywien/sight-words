@@ -1,0 +1,21 @@
+<!-- app.template.html -->
+<style>
+    :host {
+      width: 100%;
+    }
+
+    div {
+      height: 100%;
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: column;
+    }
+
+  </style>
+
+
+<div>
+    <template is="dom-repeat" items="[[words]]">
+      <word-reader voice="[[selectedVoice]]" word="[[item]]"></word-reader>
+      </template>
+</div>
